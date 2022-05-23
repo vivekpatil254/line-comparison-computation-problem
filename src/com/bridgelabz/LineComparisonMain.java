@@ -31,6 +31,12 @@ public class LineComparisonMain {
 
         line2 = (int) Math.sqrt(((x4 - x3) ^ 2 * ((x4 - x3) ^ 2) + ((y4 - y3) ^ 2) * ((y4 - y3) ^ 2)));
     }
+    public void equals(int x1, int x2, int x3, int x4, int y1, int y2, int y3, int y4) {
 
+        int line1 = (int) Math.sqrt(((x2 - x1) ^ 2) * ((x2 - x1) ^ 2) + ((y2 - y1) ^ 2) * ((y2 - y1) ^ 2));
+        int line2 = (int) Math.sqrt(((x4 - x3) ^ 2 * ((x4 - x3) ^ 2) + ((y4 - y3) ^ 2) * ((y4 - y3) ^ 2)));
+        if (line1==line2)
+            System.out.println("the line 1 and line 2 both are equal");
+    }
 
 }
